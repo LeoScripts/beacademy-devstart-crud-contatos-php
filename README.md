@@ -46,10 +46,14 @@
 
 ## :dart: About ##
 
-crud criado em aulas do curso DEVSTAR byAcademy 
+crud created in lessons in course DEVSTAR byAcademy - exelent course!
 
 ## :sparkles: Features ##
 
+:heavy_check_mark: routes layer(camada rotas) ;\
+:heavy_check_mark: controller layer(camada controlador ) ;\
+:heavy_check_mark: database layer(camada do banco de dados ) ;\
+:heavy_check_mark: views layer(camada de paginas ) ;\
 :heavy_check_mark: listing contacts(listar contatos) ;\
 :heavy_check_mark: create contact(criar contato);\
 :heavy_check_mark: update contact(atualizar contato);\
