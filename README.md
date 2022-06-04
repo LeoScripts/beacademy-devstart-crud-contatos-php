@@ -62,6 +62,7 @@ crud created in lessons in course DEVSTAR byAcademy - exelent course!
 
 The following tools were used in this project:
 - [PHP](https://www.php.net/)
+- [Bootstrap](https://getbootstrap.com/)
 
 
 ## :white_check_mark: Requirements ##
