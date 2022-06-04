@@ -13,6 +13,7 @@ function cadastro() {
 }
 
 function listar() {
+  $contatos = ['A','B','C'];
   include 'views/listar.php';
 }
 
