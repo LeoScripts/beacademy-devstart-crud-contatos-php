@@ -17,6 +17,8 @@ function cadastro() {
     $arquivo = fopen('database/contatos.csv', 'a+');
     fwrite($arquivo, "{$nome};{$email};{$telefone}".PHP_EOL);
     fclose($arquivo);
+    $mensagem = 'Cadastro realizado com sucesso!';
+    include 'views/components/mensagem.php';
   }
 
   include 'views/cadastro.php';
