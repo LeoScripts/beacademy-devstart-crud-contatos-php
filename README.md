@@ -46,11 +46,14 @@
 
 ## :dart: About ##
 
-data lessons in course of php(DevStart) 
+crud criado em aulas do curso DEVSTAR byAcademy 
 
 ## :sparkles: Features ##
 
-<!-- :heavy_check_mark: [presentation(apresentação)](./aula-00/index.php) ;\ -->
+:heavy_check_mark: listing contacts(listar contatos) ;\
+:heavy_check_mark: create contact(criar contato);\
+:heavy_check_mark: update contact(atualizar contato);\
+:heavy_check_mark: delete contato(deletar contato);\
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
@@ -69,15 +72,12 @@ git clone https://github.com/LeoScripts/beacademy-devstart-crud-contatos-php.git
 # access folder
 cd beacademy-devstart-crud-contatos-php
 
-# run sever local, insert your folder in {{ aula-02 }} 
-php -S localhost:8000 -t aula-02
+# run sever local
+php -S localhost:8000
 
-# for file specific, added name your file 
-# ex {{ variaveis.php }}
-http://localhost:8000/variaveis.php
+
 
 ```
-[other intructions](./doc.md) 
 ## :memo: License ##
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
