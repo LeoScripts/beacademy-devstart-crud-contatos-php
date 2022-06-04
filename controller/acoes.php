@@ -29,6 +29,22 @@ function listar() {
   include 'views/listar.php';
 }
 
+function excluir() {
+  $id = $_GET['id'];
+  $contatos = file('database/contatos.csv');
+
+  unset($contatos[$id]);
+  unlink('database/contatos.csv');
+  $arquivo = fopen('database/contatos.csv', 'a+');
+
+  foreach( $contatos as $contato) {
+    fwrite($arquivo, $contato);
+  }
+
+  $mensagem = 'Cadastro removido com sucesso!';
+  include 'views/components/mensagem.php';
+}
+
 function erro404() {
   include 'views/404.php';
 }
