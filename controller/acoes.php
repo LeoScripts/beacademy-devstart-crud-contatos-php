@@ -45,6 +45,32 @@ function excluir() {
   include 'views/components/mensagem.php';
 }
 
+function editar() {
+  $id = $_GET['id'];
+  $contatos = file('database/contatos.csv');
+  $dados = explode(';', $contatos[$id]);
+
+  if($_POST) {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+  
+    $contatos[$id] = "{$nome};{$email};{$telefone}".PHP_EOL;
+    unlink('database/contatos.csv');
+    $arquivo = fopen('database/contatos.csv', 'a+');
+
+    foreach( $contatos as $contato) {
+      fwrite($arquivo, $contato);
+    }
+
+    fclose($arquivo);
+    $mensagem = 'cadastro atualizado!';
+    include 'views/components/mensagem.php';
+  }
+
+  include 'views/editar.php';
+}
+
 function erro404() {
   include 'views/404.php';
 }
