@@ -9,6 +9,7 @@ function login() {
 }
 
 function cadastro() {
+  var_dump($_POST);
   include 'views/cadastro.php';
 }
 
