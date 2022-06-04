@@ -57,7 +57,7 @@ crud created in lessons in course DEVSTAR byAcademy - exelent course!
 :heavy_check_mark: listing contacts(listar contatos) ;\
 :heavy_check_mark: create contact(criar contato);\
 :heavy_check_mark: update contact(atualizar contato);\
-:heavy_check_mark: delete contato(deletar contato);\
+:heavy_check_mark: delete contact(deletar contato);\
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
