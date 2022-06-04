@@ -9,7 +9,16 @@ function login() {
 }
 
 function cadastro() {
-  var_dump($_POST);
+  if($_POST) {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+  
+    $arquivo = fopen('database/contatos.csv', 'a+');
+    fwrite($arquivo, "{$nome};{$email};{$telefone}".PHP_EOL);
+    fclose($arquivo);
+  }
+
   include 'views/cadastro.php';
 }
 
