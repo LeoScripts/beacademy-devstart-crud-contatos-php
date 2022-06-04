@@ -13,7 +13,7 @@ function cadastro() {
 }
 
 function listar() {
-  $contatos = ['A','B','C'];
+  $contatos = file('database/contatos.csv');
   include 'views/listar.php';
 }
 
